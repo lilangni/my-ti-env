@@ -24,7 +24,6 @@ RUN apt install -y \
  
  
  RUN apt install -y\
- ia32-libs\
  lib32stdc++6\
  lib32z1-dev\
  lib32z1\
