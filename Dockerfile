@@ -31,7 +31,14 @@ RUN apt install -y \
  lib32bz2-1.0 \
  libssl-dev\
  language-pack-zh-hans\
- && rm -rf /var/lib/apt/lists/*
+ bison\
+ make\
+ flex\
+ bc\
+ && rm -rf /var/lib/apt/lists/*\
+ && apt update
 
  
 ENV LANG "zh_CN.UTF-8"
+
+WORKDIR /home/lilangni/vision_sdk/vision_sdk/build
