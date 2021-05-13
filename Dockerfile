@@ -1,11 +1,11 @@
 FROM ubuntu:14.04
 LABEL author="lilangni"
+LABEL description='for TI vision sdk env'
 
 COPY sources.list /etc/apt/
 
-RUN apt update
-
-RUN apt install -y \
+RUN apt update\
+ &&apt install -y \
  ssh\
  corkscrew\
  gawk\
@@ -20,10 +20,7 @@ RUN apt install -y \
  libc6-dev-i386\
  device-tree-compiler\
  mono-complete\
- lzop
- 
- 
- RUN apt install -y\
+ lzop\
  lib32stdc++6\
  lib32z1-dev\
  lib32z1\
