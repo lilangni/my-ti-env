@@ -30,4 +30,8 @@ RUN apt install -y \
  lib32ncurses5\
  lib32bz2-1.0 \
  libssl-dev\
+ language-pack-zh-hans\
  && rm -rf /var/lib/apt/lists/*
+
+ 
+ENV LANG "zh_CN.UTF-8"
