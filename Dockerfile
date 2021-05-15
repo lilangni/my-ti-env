@@ -34,8 +34,23 @@ RUN apt update\
  bc\
  && rm -rf /var/lib/apt/lists/*\
  && apt update
-
+ 
+ 
+RUN apt update\
+ &&apt install -y \
+ g++\
+ graphviz\
+ bash-completion\
+ && rm -rf /var/lib/apt/lists/*\
+ && apt update
  
 ENV LANG "zh_CN.UTF-8"
 
 WORKDIR /home/lilangni/vision_sdk/vision_sdk/build
+
+RUN useradd -u 1000 -U -p '$6$5G6oBnZEyPWD7emi$nOYVLj0c7VSXra0syx7r2iL7fCCR19ytNNF0MSzt6i1QD8zTxf1I3qyRoazr78D4UGylmWTq.R4dP.ZyzYCIP0' lilangni\
+ && echo "lilangni ALL=(ALL)ALL">>/etc/sudoers
+
+COPY .bashrc /home/lilangni
+
+USER 1000
