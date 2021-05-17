@@ -20,3 +20,7 @@
 	ps = push
 	ltn = ls-tree -r HEAD~ --name-only
 	lt = ls-tree -r HEAD~ --name-only
+	
+	
+[url "github.com.cnpmjs.org"]
+	insteadOf = github.com
