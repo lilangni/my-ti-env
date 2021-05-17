@@ -52,3 +52,4 @@ COPY gitconfig /etc/
 WORKDIR /home/lilangni/vision_sdk/vision_sdk/build
 ENV LANG "zh_CN.UTF-8"
 USER 1000
+COPY .bashrc /home/lilangni
