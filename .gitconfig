@@ -1,0 +1,22 @@
+[user]
+	name = lilangni
+	email = lilangni@qq.com
+
+
+[alias]
+	ch = checkout
+	st = status
+	cf = config
+	ck = checkout
+	ft = fetch
+	fh = fetch
+	br = branch
+	brv = branch --v
+	bs = bisect
+	lg = log
+	pull = pl
+	pl = pull --rebase
+	cm = commit
+	ps = push
+	ltn = ls-tree -r HEAD~ --name-only
+	lt = ls-tree -r HEAD~ --name-only
